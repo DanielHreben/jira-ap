@@ -1,4 +1,6 @@
 # jira-ap
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/DanielHreben/jira-ap.svg)](https://greenkeeper.io/)
 Load Jira AP JS API dynamically
 
 ```javascript
