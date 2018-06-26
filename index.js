@@ -12,7 +12,11 @@ function initAP (options) {
   script.src = baseUrl + '/atlassian-connect/all.js'
 
   if (options) {
-    script.setAttribute('data-options', options)
+    const formattedOptions = Object.keys(options)
+      .map(function (key) { return key + ':' + options[key] })
+      .join(';')
+
+    script.setAttribute('data-options', formattedOptions)
   }
 
   document.getElementsByTagName('head')[0].appendChild(script)
